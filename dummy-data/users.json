@@ -1,0 +1,24 @@
+[
+  {
+    "firstName": "Teddy",
+    "middleName": "Brian",
+    "lastName": "Odhiambo",
+    "phones": ["2547230789", "2547896545"],
+    "addresses": ["109-40102 KE", "Dagoretti Corner Flat 11 Nairobi Kenya"],
+    "email": "tedb19@gmail.com",
+    "photoUrl": "",
+    "username": "tedb",
+    "password": "tedb"
+  },
+  {
+    "firstName": "Joyce",
+    "middleName": "",
+    "lastName": "Enzoveli",
+    "phones": ["2547230789", "2547896545"],
+    "addresses": ["109-40102 KE", "Dagoretti Corner Flat 11 Nairobi Kenya"],
+    "email": "tedb19@gmail.com",
+    "photoUrl": "",
+    "username": "tedb",
+    "password": "tedb"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "server": {
+    "app": {
+      "description": "Reference app (hapi v17)"
+    },
+    "port": 3000,
+    "host": "localhost",
+    "router": { "stripTrailingSlash": true }
+  },
+  "register": {
+    "plugins": [
+      { "plugin": "blipp" },
+      { "plugin": "inert" },
+      { "plugin": "vision" },
+      {
+        "plugin": "lout",
+        "options": { "endpoint": "/api/docs" }
+      },
+      { "plugin": "../routes/users.routes" }
+    ]
+  }
+}

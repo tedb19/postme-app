@@ -36,6 +36,7 @@
     "eslint-plugin-node": "6.0.1",
     "eslint-plugin-promise": "3.8.0",
     "eslint-plugin-standard": "3.1.0",
+    "ghooks": "2.0.4",
     "inert": "5.1.0",
     "lab": "15.4.5",
     "lab-babel": "1.1.1",
@@ -52,6 +53,9 @@
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "yarn test"
     }
   }
 }

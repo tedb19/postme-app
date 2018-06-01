@@ -23,6 +23,7 @@ This is the backend app for the _Reference App_. It will showcase the following 
 Setting up npm locally:
 
 * You need to run the following:
+
   `> npm set save-exact=true`
   `> npm set init-author-name 'Teddy Odhiambo'`
   `> npm set init-author-email 'tedb19@gmail.com'`

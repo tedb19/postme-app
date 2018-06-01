@@ -16,7 +16,7 @@
         "plugin": "lout",
         "options": { "endpoint": "/api/docs" }
       },
-      { "plugin": "../routes/users.routes" }
+      { "plugin": "../routes/users/routes" }
     ]
   }
 }

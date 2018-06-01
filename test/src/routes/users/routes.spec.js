@@ -1,12 +1,12 @@
 import Code from 'code'
 import Lab from 'lab'
-import Server from '../../../src/server/index'
+import Server from '../../../../src/server/index'
 
 const { describe, it, beforeEach } = (exports.lab = Lab.script())
 
 const { expect } = Code
 
-describe('POST /users', () => {
+describe('GET /users/{username?}', () => {
   let request, server, response
 
   beforeEach(async () => {
@@ -26,5 +26,12 @@ describe('POST /users', () => {
   it('returns HTTP status code 200', async () => {
     const { statusCode } = response
     expect(statusCode).to.equal(200)
+  })
+
+  it('returns the matching user given a username', async () => {
+    const paramRequest = { ...request, url: '/users/tedb' }
+    response = await server.inject(paramRequest)
+    const { payload } = response
+    expect(JSON.parse(payload)).to.be.an.array()
   })
 })

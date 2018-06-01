@@ -6,9 +6,12 @@
   "author": "Teddy Odhiambo <tedb19@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/server/index.js --ignore test/ --ignore './logs*.json' --watch src/* --exec babel-node",
-    "test": "lab -T node_modules/lab-babel -t 70 -S -I __core-js_shared__ -v -C --coverage-exclude src/server/index.js",
-    "test-coverage": "lab -c -a code -r html -o test/coverage/coverage.html -T node_modules/lab-babel -I __core-js_shared__ --coverage-exclude src/server/index.js",
+    "start":
+      "nodemon src/server/index.js --ignore test/ --ignore './logs*.json' --watch src/* --exec babel-node",
+    "test":
+      "lab -T node_modules/lab-babel -t 70 -S -I __core-js_shared__ -v -C --coverage-exclude src/server/index.js",
+    "test-coverage":
+      "lab -c -a code -r html -o test/coverage/coverage.html -T node_modules/lab-babel -I __core-js_shared__ --coverage-exclude src/server/index.js",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once",
     "commit": "git-cz"
@@ -46,7 +49,9 @@
     "type": "git",
     "url": "https://github.com/tedb19/postme-app.git"
   },
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
